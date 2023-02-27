@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="649dp"
+            android:layout_height="274dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="h,16:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/bandera" />
+
+        <TextView
+            android:id="@+id/pais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:text="País"
+            app:layout_constraintBaseline_toBaselineOf="@+id/paisNombre"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/poblacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Población"
+            app:layout_constraintBaseline_toBaselineOf="@+id/poblacionNum"
+            app:layout_constraintEnd_toStartOf="@+id/pais"
+            app:layout_constraintHorizontal_bias="0.693"
+            app:layout_constraintStart_toStartOf="@+id/pais"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/paisNombre"
+            android:layout_width="187dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="73dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Australia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.264"
+            app:layout_constraintStart_toEndOf="@+id/pais"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/poblacionNum"
+            android:layout_width="185dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="1dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="25 690 000"
+            app:layout_constraintEnd_toEndOf="@+id/paisNombre"
+            app:layout_constraintTop_toBottomOf="@+id/paisNombre"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:lineSpacingExtra="10sp"
+            android:text="Australia es un país en el continente australiano, así como en la isla de Tasmania. La Tierra tiene un área total de 7.741.220 km² y una costa total de 25.760 km. Esta área es aproximadamente 15,3 veces el tamaño de España. Esto hace que Australia sea el país más grande en el continente australiano, y el sexto del mundo en cuanto a superficie. Con 3,3 habitantes por km², es también el país menos poblado en el continente australiano. Una proporción excepcionalmente alta de los habitantes (86%) pertenece a la población urbana.  El país tiene 8.222 islas mayormente deshabitadas en el mar abierto. Australia no tiene países vecinos directamente adyacentes. El pico más alto de la montaña (Mount Kosciuszko) está a 2.228 metros. La distancia entre Madrid y su capital Canberra es de aproximadamente 17.590 km. Las temperaturas medias anuales varían entre los 19 y los 32 °C, según la región. El norte es en gran medida tropical y subtropical, con temperaturas diurnas a menudo superiores a los 30 °C y vientos y temperaturas del agua cálidos. En el continente central, en las extensas regiones desérticas, la mayor parte del tiempo el clima es muy seco y caluroso. La gran mayor parte de Australia está formada por paisajes áridos con precipitaciones de menos de 250 mm por m² al año. En la costa sur de Australia, en cambio, el clima es cálido pero templado, con máximas diarias que rondan los 30 °C. La temperatura del agua raramente alcanza más de 20 °C debido a las influencias antárticas.El país es conocido por la Casa de la Ópera de Sídney, la Gran Barrera de Coral, una vasta área natural desértica conocida como Outback y especies animales únicas, como el canguro y el ornitorrinco."
+            android:textAlignment="textStart"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/poblacionNum"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top"
+            app:constraint_referenced_ids="imageView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

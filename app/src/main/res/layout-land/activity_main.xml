@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="1289dp"
+            android:layout_height="488dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="h,16:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/bandera" />
+
+        <TextView
+            android:id="@+id/pais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="96dp"
+            android:text="@string/pa_s"
+            app:layout_constraintBaseline_toBaselineOf="@+id/paisNombre"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/poblacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/poblaci_n"
+            app:layout_constraintBaseline_toBaselineOf="@+id/poblacionNum"
+            app:layout_constraintEnd_toStartOf="@+id/pais"
+            app:layout_constraintHorizontal_bias="0.693"
+            app:layout_constraintStart_toStartOf="@+id/pais"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/paisNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="73dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="@string/australia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/pais"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/poblacionNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="1dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="@string/_25_690_000"
+            app:layout_constraintEnd_toEndOf="@+id/paisNombre"
+            app:layout_constraintTop_toBottomOf="@+id/paisNombre"
+            tools:ignore="LabelFor,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:text="@string/australia_es_un_pa_s_en_el_continente_australiano_as_como_en_la_isla_de_tasmania_la_tierra_tiene_un_rea_total_de_7_741_220_km_y_una_costa_total_de_25_760_km_esta_rea_es_aproximadamente_15_3_veces_el_tama_o_de_espa_a_esto_hace_que_australia_sea_el_pa_s_m_s_grande_en_el_continente_australiano_y_el_sexto_del_mundo_en_cuanto_a_superficie_con_3_3_habitantes_por_km_es_tambi_n_el_pa_s_menos_poblado_en_el_continente_australiano_una_proporci_n_excepcionalmente_alta_de_los_habitantes_86_pertenece_a_la_poblaci_n_urbana_el_pa_s_tiene_8_222_islas_mayormente_deshabitadas_en_el_mar_abierto_australia_no_tiene_pa_ses_vecinos_directamente_adyacentes_el_pico_m_s_alto_de_la_monta_a_mount_kosciuszko_est_a_2_228_metros_la_distancia_entre_madrid_y_su_capital_canberra_es_de_aproximadamente_17_590_km_las_temperaturas_medias_anuales_var_an_entre_los_19_y_los_32_c_seg_n_la_regi_n_el_norte_es_en_gran_medida_tropical_y_subtropical_con_temperaturas_diurnas_a_menudo_superiores_a_los_30_c_y_vientos_y_temperaturas_del_agua_c_lidos_en_el_continente_central_en_las_extensas_regiones_des_rticas_la_mayor_parte_del_tiempo_el_clima_es_muy_seco_y_caluroso_la_gran_mayor_parte_de_australia_est_formada_por_paisajes_ridos_con_precipitaciones_de_menos_de_250_mm_por_m_al_a_o_en_la_costa_sur_de_australia_en_cambio_el_clima_es_c_lido_pero_templado_con_m_ximas_diarias_que_rondan_los_30_c_la_temperatura_del_agua_raramente_alcanza_m_s_de_20_c_debido_a_las_influencias_ant_rticas_el_pa_s_es_conocido_por_la_casa_de_la_pera_de_s_dney_la_gran_barrera_de_coral_una_vasta_rea_natural_des_rtica_conocida_como_outback_y_especies_animales_nicas_como_el_canguro_y_el_ornitorrinco"
+            android:textAlignment="viewStart"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/poblacionNum"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top"
+            app:constraint_referenced_ids="imageView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
